@@ -21,7 +21,8 @@ ENV SHAREDWORLD_INTEGRATION_BLOB_DIR=/app/data/blobs
 ENV SW_ALLOW_DEV_AUTH=true
 ENV SW_DEV_AUTH_SECRET=dev-secret
 ENV SW_ALLOW_DEV_INSECURE_E4MC=true
+ENV SW_SIGNING_SECRET=sharedworld-secret
 
 EXPOSE 7860
 
-CMD ["sh", "-c", "/app/swcore --dev --listen 0.0.0.0:${PORT:-7860} --db /app/data/sharedworld.db"]
+CMD ["sh", "-c", "/app/swcore --listen 0.0.0.0:${PORT:-7860} --db /app/data/sharedworld.db"]
