@@ -14,8 +14,8 @@ RUN chmod +x /app/swcore
 RUN mkdir -p /app/data/blobs
 
 ENV PORT=7860
-ENV SHAREDWORLD_PUBLIC_URL=https://sharedworld-server.onrender.com
-ENV SW_PUBLIC_BASE_URL=https://sharedworld-server.onrender.com
+ENV SHAREDWORLD_PUBLIC_URL=https://peerworld-server.onrender.com
+ENV SW_PUBLIC_BASE_URL=https://peerworld-server.onrender.com
 ENV SHAREDWORLD_INTEGRATION_DB_FILE=/app/data/sharedworld.db
 ENV SHAREDWORLD_INTEGRATION_BLOB_DIR=/app/data/blobs
 ENV SW_ALLOW_DEV_AUTH=true
